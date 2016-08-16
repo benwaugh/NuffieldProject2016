@@ -1,0 +1,14 @@
+#!/bin/sh
+#
+# This script starts a Jupyter notebook server using the environment created by the
+# script 'notebook-setup'.
+#
+# It exists so that a student can get started by double-clicking an icon without
+# having to get to grips with shell commands as well as Python and basic particle
+# physics. It works on the UCL HEP cluster (Scientific Linux 6) and is not designed
+# to be any more general than needed for that.
+#
+source /opt/rh/python33/enable
+source analysis/bin/activate
+jupyter notebook
+

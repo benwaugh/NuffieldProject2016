@@ -1,0 +1,16 @@
+#!/bin/sh
+#
+# This script sets up a Python virtual environment with the packages needed
+# for working with Matplotlib in a Python 3 Jupyter notebook.
+#
+# It exists so that a student can get started by double-clicking an icon without
+# having to get to grips with shell commands as well as Python and basic particle
+# physics. It works on the UCL HEP cluster (Scientific Linux 6) and is not designed
+# to be any more general than needed for that.
+#
+source /opt/rh/python33/enable
+virtualenv analysis
+source analysis/bin/activate
+pip install --upgrade pip
+pip install --upgrade jupyter matplotlib
+
