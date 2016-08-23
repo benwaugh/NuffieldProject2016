@@ -8,7 +8,7 @@
 # physics. It works on the UCL HEP cluster (Scientific Linux 6) and is not designed
 # to be any more general than needed for that.
 #
-source /opt/rh/python33/enable
+source /opt/rh/python27/enable
 source analysis/bin/activate
 jupyter notebook
 
