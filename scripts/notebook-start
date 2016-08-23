@@ -9,6 +9,9 @@
 # to be any more general than needed for that.
 #
 source /opt/rh/python27/enable
+source /afs/cern.ch/sw/lcg/contrib/gcc/4.9/x86_64-slc6/setup.sh
+export ROOTSYS=/afs/cern.ch/sw/lcg/app/releases/ROOT/6.06.06/x86_64-slc6-gcc49-opt/root
+source $ROOTSYS/bin/thisroot.sh
 source analysis/bin/activate
 jupyter notebook
 
